@@ -1,0 +1,248 @@
+/* Global */
+h1,h2,h3,h4,h5,p{
+    color: black /*#2F4F4F/*  whitesmoke; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul{
+    display: inline;
+    list-style-type: none;
+}
+
+.active{
+    color: whitesmoke;
+}
+.navbar{
+    position: static;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    color: whitesmoke;
+}
+/* .logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 30%;
+}  */
+.navbar a:hover {
+    background-color: #EC6EAD;
+    display: block;
+    padding: 12px 16px;
+    position: relative;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links li{
+    margin: 0 30px;
+    }
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #EC6EAD;
+    border-radius: 20px;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #6FB1FC;
+    border-radius: 20px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 20px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: white;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.1s;
+    background: #f2f2f2;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+.img{
+    width: 225px;
+    height: 275px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+}
+p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.heading{
+    text-align: center;
+    color: #222f3e #04AA6D;
+    margin: 0;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy-1,.buy-2,.buy-3,.buy-4,.buy-5,.buy-6,.buy-7,.buy-8,.buy-9{
+    background: #4364F7;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon, 
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: whitesmoke;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.2em;
+    color: whitesmoke;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
