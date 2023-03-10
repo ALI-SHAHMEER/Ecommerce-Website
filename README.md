@@ -1,2 +1,2 @@
 # Ecommerce-Website
-Html,Css,Flask,python is used in this project.
+Html,Css,Flask,Python is used in this project.
